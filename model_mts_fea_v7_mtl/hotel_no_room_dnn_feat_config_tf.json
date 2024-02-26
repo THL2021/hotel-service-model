@@ -1,0 +1,225 @@
+{
+  "comment": "hotel_no_room_dnn_feat_config_tf.json",
+  "features": [
+    {"feature_type": "id_feature", "feature_name": "discount", "expression": "context:discount", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "diff", "expression": "context:diff", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "diff_hour", "expression": "context:diff_hour", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "shid_3d_cancel_rate", "expression": "context:shid_3d_cancel_rate", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "shid_3d_noroom_noord_rate", "expression": "context:shid_3d_noroom_noord_rate", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "shid_28d_cancel_rate", "expression": "context:shid_28d_cancel_rate", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "shid_28d_noroom_noord_rate", "expression": "context:shid_28d_noroom_noord_rate", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "shid_90d_cancel_rate", "expression": "context:shid_90d_cancel_rate", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "shid_90d_noroom_noord_rate", "expression": "context:shid_90d_noroom_noord_rate", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "hid_3d_cancel_rate", "expression": "context:hid_3d_cancel_rate", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "hid_3d_noroom_noord_rate", "expression": "context:hid_3d_noroom_noord_rate", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "hid_28d_cancel_rate", "expression": "context:hid_28d_cancel_rate", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "hid_28d_noroom_noord_rate", "expression": "context:hid_28d_noroom_noord_rate", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "hid_90d_cancel_rate", "expression": "context:hid_90d_cancel_rate", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "hid_90d_noroom_noord_rate", "expression": "context:hid_90d_noroom_noord_rate", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "seller_3d_noroom_rate", "expression": "context:seller_3d_noroom_rate", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "seller_3d_noroom_noord_rate", "expression": "context:seller_3d_noroom_noord_rate", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "seller_28d_noroom_rate", "expression": "context:seller_28d_noroom_rate", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "seller_28d_noroom_noord_rate", "expression": "context:seller_28d_noroom_noord_rate", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "srid_3d_noroom_rate", "expression": "context:srid_3d_noroom_rate", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "srid_3d_noroom_noord_rate", "expression": "context:srid_3d_noroom_noord_rate", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "srid_28d_noroom_rate", "expression": "context:srid_28d_noroom_rate", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "srid_28d_noroom_noord_rate", "expression": "context:srid_28d_noroom_noord_rate", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "rate_3d_cancel_rate", "expression": "context:rate_3d_cancel_rate", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "rate_3d_noroom_noord_rate", "expression": "context:rate_3d_noroom_noord_rate", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "rate_28d_cancel_rate", "expression": "context:rate_28d_cancel_rate", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "rate_180d_cancel_rate", "expression": "context:rate_180d_cancel_rate", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "shid_28d_ship_cnt", "expression": "context:shid_28d_ship_cnt", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "shid_28d_cancel_cnt", "expression": "context:shid_28d_cancel_cnt", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "shid_28d_noroom_noord_cnt", "expression": "context:shid_28d_noroom_noord_cnt", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "hid_28d_ship_cnt", "expression": "context:hid_28d_ship_cnt", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "hid_28d_cancel_cnt", "expression": "context:hid_28d_cancel_cnt", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "hid_28d_noroom_noord_cnt", "expression": "context:hid_28d_noroom_noord_cnt", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "book_jys_1d", "expression": "context:book_jys_1d", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "book_jys_7d", "expression": "context:book_jys_7d", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "book_jys_30d", "expression": "context:book_jys_30d", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "book_jys_90d", "expression": "context:book_jys_90d", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "book_jys_130r", "expression": "context:book_jys_130r", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "book_jys_730r", "expression": "context:book_jys_730r", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "stay_day_jy", "expression": "context:stay_day_jy", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "avg_stay_jy_7d", "expression": "context:avg_stay_jy_7d", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "avg_stay_jy_28d", "expression": "context:avg_stay_jy_28d", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "max_stay_jy_7d", "expression": "context:max_stay_jy_7d", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "max_stay_jy_28d", "expression": "context:max_stay_jy_28d", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "avg_stay_ratio_7d", "expression": "context:avg_stay_ratio_7d", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "avg_stay_ratio_28d", "expression": "context:avg_stay_ratio_28d", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "max_stay_ratio_7d", "expression": "context:max_stay_ratio_7d", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "max_stay_ratio_28d", "expression": "context:max_stay_ratio_28d", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "latest_day_diff", "expression": "context:latest_day_diff", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "latest_change_cnt", "expression": "context:latest_change_cnt", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "latest_change_channel", "expression": "context:latest_change_channel", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "op_cnt_total", "expression": "context:op_cnt_total", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "op_cnt_1d", "expression": "context:op_cnt_1d", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "op_cnt_3d", "expression": "context:op_cnt_3d", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "op_cnt_7d", "expression": "context:op_cnt_7d", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "op_cnt_28d", "expression": "context:op_cnt_28d", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "op_cnt_90d", "expression": "context:op_cnt_90d", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "op_days_total", "expression": "context:op_days_total", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "op_days_1d", "expression": "context:op_days_1d", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "op_days_3d", "expression": "context:op_days_3d", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "op_days_7d", "expression": "context:op_days_7d", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "op_days_28d", "expression": "context:op_days_28d", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "op_days_90d", "expression": "context:op_days_90d", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "center_distance_range", "expression": "context:center_distance_range", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "rooms", "expression": "context:rooms", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "business_num", "expression": "context:business_num", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "pic_num", "expression": "context:pic_num", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "pic_room_num", "expression": "context:pic_room_num", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "description_length", "expression": "context:description_length", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "static_score", "expression": "context:static_score", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "feizhu", "expression": "context:feizhu", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "sp_seller", "expression": "context:sp_seller", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+    {"feature_type": "id_feature", "feature_name": "week_day", "expression": "context:week_day", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+
+    {"feature_type": "raw_feature", "feature_name": "is_noroom_sample", "expression": "context:is_noroom_sample", "value_type": "double"},
+    {"feature_type": "raw_feature", "feature_name": "is_cancel_sample", "expression": "context:is_cancel_sample", "value_type": "double"},
+
+    {
+      "sequence_name":"shid_seq_fea",
+      "sequence_column":"seq_features",
+      "sequence_length":28,
+      "sequence_delim":";",
+      "attribute_delim":"#",
+      "sequence_table" : "item",
+      "sequence_pk": "user:seq_features",
+      "features":[
+        {
+          "feature_type":"id_feature",
+          "feature_name":"week",
+          "expression":"item:week",
+          "hash_bucket_size": 100,
+          "embed_size": 1,
+          "shared": true,
+          "shared_matrix_name": "week_mat",
+          "value_type": "string",
+          "need_prefix": false
+        },
+        {
+          "feature_type":"id_feature",
+          "feature_name":"days_diff",
+          "expression":"item:days_diff",
+          "hash_bucket_size": 100,
+          "embed_size": 1,
+          "shared": true,
+          "shared_matrix_name": "days_diff_mat",
+          "value_type": "string",
+          "need_prefix": false
+        },
+        {
+          "feature_type":"id_feature",
+          "feature_name":"holiday",
+          "expression":"item:holiday",
+          "hash_bucket_size": 100,
+          "embed_size": 1,
+          "shared": true,
+          "shared_matrix_name": "holiday_mat",
+          "value_type": "string",
+          "need_prefix": false
+        },
+
+
+        {
+          "feature_type":"raw_feature",
+          "feature_name":"ship_cnt",
+          "expression":"item:ship_cnt",
+          "value_type": "double"
+        },
+        {
+          "feature_type":"raw_feature",
+          "feature_name":"refund_cnt",
+          "expression":"item:refund_cnt",
+          "value_type": "double"
+        },
+        {
+          "feature_type":"raw_feature",
+          "feature_name":"no_room_cnt",
+          "expression":"item:no_room_cnt",
+          "value_type": "double"
+        }
+
+      ]
+    },
+
+    {
+      "sequence_name":"hid_seq_fea",
+      "sequence_column":"seq_features",
+      "sequence_length":28,
+      "sequence_delim":";",
+      "attribute_delim":"#",
+      "sequence_table" : "item",
+      "sequence_pk": "user:seq_features",
+      "features":[
+
+
+        {
+          "feature_type":"raw_feature",
+          "feature_name":"ship_cnt",
+          "expression":"item:ship_cnt",
+          "value_type": "double"
+        },
+        {
+          "feature_type":"raw_feature",
+          "feature_name":"refund_cnt",
+          "expression":"item:refund_cnt",
+          "value_type": "double"
+        },
+        {
+          "feature_type":"raw_feature",
+          "feature_name":"no_room_cnt",
+          "expression":"item:no_room_cnt",
+          "value_type": "double"
+        },
+        {
+          "feature_type":"raw_feature",
+          "feature_name":"slr_op_cnt",
+          "expression":"item:slr_op_cnt",
+          "value_type": "double"
+        }
+
+      ]
+    },
+
+    {
+      "sequence_name":"slr_seq_fea",
+      "sequence_column":"seq_features",
+      "sequence_length":28,
+      "sequence_delim":";",
+      "attribute_delim":"#",
+      "sequence_table" : "item",
+      "sequence_pk": "user:seq_features",
+      "features":[
+
+
+        {
+          "feature_type":"raw_feature",
+          "feature_name":"ship_cnt",
+          "expression":"item:ship_cnt",
+          "value_type": "double"
+        },
+        {
+          "feature_type":"raw_feature",
+          "feature_name":"refund_cnt",
+          "expression":"item:refund_cnt",
+          "value_type": "double"
+        },
+        {
+          "feature_type":"raw_feature",
+          "feature_name":"no_room_cnt",
+          "expression":"item:no_room_cnt",
+          "value_type": "double"
+        },
+        {
+          "feature_type":"raw_feature",
+          "feature_name":"slr_op_cnt",
+          "expression":"item:slr_op_cnt",
+          "value_type": "double"
+        }
+
+      ]
+    }
+  ]
+}

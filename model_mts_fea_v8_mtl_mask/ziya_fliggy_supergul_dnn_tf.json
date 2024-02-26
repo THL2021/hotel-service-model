@@ -1,0 +1,548 @@
+{
+  "comment": "ziya_fliggy_supergul_dnn.json",
+  "features": [
+        {"feature_name": "f4", "feature_type": "id_feature", "expression": "item:shid", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f7", "feature_type": "id_feature", "expression": "item:city", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f8", "feature_type": "id_feature", "expression": "item:district", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f9", "feature_type": "id_feature", "expression": "item:business", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f10", "feature_type": "id_feature", "expression": "item:geohash5", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+
+        {"feature_name": "f12", "feature_type": "id_feature", "expression": "item:star", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f13", "feature_type": "id_feature", "expression": "item:brand", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f14", "feature_type": "id_feature", "expression": "item:rooms", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f15", "feature_type": "id_feature", "expression": "item:business_num", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f19", "feature_type": "id_feature", "expression": "item:has_park", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f20", "feature_type": "id_feature", "expression": "item:is_credit_htl", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f21", "feature_type": "id_feature", "expression": "item:brand_type", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f22", "feature_type": "id_feature", "expression": "item:hotel_types", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f23", "feature_type": "id_feature", "expression": "item:hotel_tags", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f24", "feature_type": "id_feature", "expression": "item:center_distance_range", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f25", "feature_type": "id_feature", "expression": "item:rate_score", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f26", "feature_type": "id_feature", "expression": "item:rate_num", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f27", "feature_type": "id_feature", "expression": "item:rate_score_city_rn", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f28", "feature_type": "id_feature", "expression": "item:rate_score_district_rn", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f29", "feature_type": "id_feature", "expression": "item:rate_num_city_rn", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f30", "feature_type": "id_feature", "expression": "item:rate_num_district_rn", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+
+        {"feature_name": "f1", "feature_type": "id_feature", "expression": "context:price_range", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f2", "feature_type": "id_feature", "expression": "context:user_distance", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f3", "feature_type": "id_feature", "expression": "context:poi_distance", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+
+        {"feature_name": "f32", "feature_type": "id_feature", "expression": "user:usercity", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f33", "feature_type": "id_feature", "expression": "user:pos_type", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f34", "feature_type": "id_feature", "expression": "user:checkin_day_type", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f35", "feature_type": "id_feature", "expression": "user:live_day_type", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f36", "feature_type": "id_feature", "expression": "user:checkin_week", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f37", "feature_type": "id_feature", "expression": "user:checkout_week", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f38", "feature_type": "id_feature", "expression": "user:search_week", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f39", "feature_type": "id_feature", "expression": "user:client_type", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f40", "feature_type": "id_feature", "expression": "user:key_words", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f41", "feature_type": "id_feature", "expression": "user:is_initsearch", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f42", "feature_type": "id_feature", "expression": "user:is_keyword_search", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f43", "feature_type": "id_feature", "expression": "user:is_star_search", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f44", "feature_type": "id_feature", "expression": "user:is_brand_search", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f45", "feature_type": "id_feature", "expression": "user:is_hotelname_search", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f46", "feature_type": "id_feature", "expression": "user:is_poi_search", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f47", "feature_type": "id_feature", "expression": "user:is_area_search", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f48", "feature_type": "id_feature", "expression": "user:is_district_search", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f49", "feature_type": "id_feature", "expression": "user:is_nearby_search", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f50", "feature_type": "id_feature", "expression": "user:poi_name", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f53", "feature_type": "id_feature", "expression": "user:age", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f54", "feature_type": "id_feature", "expression": "user:gender", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f55", "feature_type": "id_feature", "expression": "user:purchase_power_level", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f56", "feature_type": "id_feature", "expression": "user:phone_os", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f57", "feature_type": "id_feature", "expression": "user:freq_city_id", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f58", "feature_type": "id_feature", "expression": "user:search_hour", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f59", "feature_type": "id_feature", "expression": "user:before_days", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f60", "feature_type": "id_feature", "expression": "user:buy_days", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f61", "feature_type": "id_feature", "expression": "user:tb_level", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f62", "feature_type": "id_feature", "expression": "user:star_name", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f63", "feature_type": "id_feature", "expression": "user:education_degree", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f64", "feature_type": "id_feature", "expression": "user:career_type", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f65", "feature_type": "id_feature", "expression": "user:discount_sensitive", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f66", "feature_type": "id_feature", "expression": "user:phone_brand", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f67", "feature_type": "id_feature", "expression": "user:is_college_student", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f68", "feature_type": "id_feature", "expression": "user:has_child", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f69", "feature_type": "id_feature", "expression": "user:pred_baby_age", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f70", "feature_type": "id_feature", "expression": "user:is_married", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f71", "feature_type": "id_feature", "expression": "user:is_inlove", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f72", "feature_type": "id_feature", "expression": "user:is_has_house", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f73", "feature_type": "id_feature", "expression": "user:is_has_car", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f74", "feature_type": "id_feature", "expression": "user:id_constellation", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f75", "feature_type": "id_feature", "expression": "user:city_code", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f76", "feature_type": "id_feature", "expression": "user:last_bhv_type", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f78", "feature_type": "id_feature", "expression": "user:last_time_seg", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f79", "feature_type": "id_feature", "expression": "user:last_clk_price_range", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f81", "feature_type": "id_feature", "expression": "user:last_clk_star", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f82", "feature_type": "id_feature", "expression": "user:last_clk_brand", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f83", "feature_type": "id_feature", "expression": "user:last_clk_district", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f84", "feature_type": "id_feature", "expression": "user:last_clk_area", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f85", "feature_type": "id_feature", "expression": "user:acc_fav_cnt", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f86", "feature_type": "id_feature", "expression": "user:acc_ord_cnt", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f87", "feature_type": "id_feature", "expression": "user:acc_clk_hotel_cnt", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+
+        {"feature_name": "f88", "feature_type": "lookup_feature", "key": "user:key_words", "map": "item:query_pctr_7d", "needDiscrete": true, "needKey": false, "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f89", "feature_type": "lookup_feature", "key": "user:key_words", "map": "item:query_pctr_30d", "needDiscrete": true, "needKey": false, "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f90", "feature_type": "lookup_feature", "key": "user:key_words", "map": "item:query_pcvr_7d", "needDiscrete": true, "needKey": false, "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f91", "feature_type": "lookup_feature", "key": "user:key_words", "map": "item:query_pcvr_30d", "needDiscrete": true, "needKey": false, "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f92", "feature_type": "lookup_feature", "key": "user:key_words", "map": "item:query_book_uv_7d", "needDiscrete": true, "needKey": false, "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f93", "feature_type": "lookup_feature", "key": "user:key_words", "map": "item:query_book_uv_30d", "needDiscrete": true, "needKey": false, "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f94", "feature_type": "lookup_feature", "key": "context:price_range", "map": "user:ipv_price_range", "needDiscrete": true, "needKey": false, "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f95", "feature_type": "lookup_feature", "key": "item:star", "map": "user:ipv_star", "needDiscrete": true, "needKey": false, "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f96", "feature_type": "lookup_feature", "key": "item:brand", "map": "user:ipv_brand", "needDiscrete": true, "needKey": false, "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f97", "feature_type": "lookup_feature", "key": "item:district", "map": "user:ipv_district", "needDiscrete": true, "needKey": false, "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f98", "feature_type": "lookup_feature", "key": "item:business", "map": "user:ipv_area", "needDiscrete": true, "needKey": false, "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f99", "feature_type": "lookup_feature", "key": "item:shid", "map": "user:hotel_prefer", "needDiscrete": true, "needKey": false, "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f100", "feature_type": "lookup_feature", "key": "context:price_range", "map": "user:price_range_prefer", "needDiscrete": true, "needKey": false, "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f101", "feature_type": "lookup_feature", "key": "item:star", "map": "user:star_prefer", "needDiscrete": true, "needKey": false, "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f102", "feature_type": "lookup_feature", "key": "item:brand", "map": "user:brand_prefer", "needDiscrete": true, "needKey": false, "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f103", "feature_type": "lookup_feature", "key": "item:district", "map": "user:district_prefer", "needDiscrete": true, "needKey": false, "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f104", "feature_type": "lookup_feature", "key": "item:business", "map": "user:area_prefer", "needDiscrete": true, "needKey": false, "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f105", "feature_type": "lookup_feature", "key": "item:shid", "map": "user:user_se_hotel_prefer", "needDiscrete": true, "needKey": false, "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f106", "feature_type": "lookup_feature", "key": "item:shid", "map": "user:user_clk_hotel_prefer", "needDiscrete": true, "needKey": false, "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f107", "feature_type": "lookup_feature", "key": "item:shid", "map": "user:user_book_hotel_prefer", "needDiscrete": true, "needKey": false, "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f108", "feature_type": "lookup_feature", "key": "item:shid", "map": "user:user_fvr_hotel_prefer", "needDiscrete": true, "needKey": false, "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f109", "feature_type": "lookup_feature", "key": "item:star", "map": "user:user_se_star_prefer", "needDiscrete": true, "needKey": false, "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f110", "feature_type": "lookup_feature", "key": "item:star", "map": "user:user_clk_star_prefer", "needDiscrete": true, "needKey": false, "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f111", "feature_type": "lookup_feature", "key": "item:star", "map": "user:user_book_star_prefer", "needDiscrete": true, "needKey": false, "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f112", "feature_type": "lookup_feature", "key": "item:star", "map": "user:user_fvr_star_prefer", "needDiscrete": true, "needKey": false, "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f113", "feature_type": "lookup_feature", "key": "item:brand", "map": "user:user_se_brand_prefer", "needDiscrete": true, "needKey": false, "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f114", "feature_type": "lookup_feature", "key": "item:brand", "map": "user:user_clk_brand_prefer", "needDiscrete": true, "needKey": false, "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f115", "feature_type": "lookup_feature", "key": "item:brand", "map": "user:user_book_brand_prefer", "needDiscrete": true, "needKey": false, "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f116", "feature_type": "lookup_feature", "key": "item:brand", "map": "user:user_fvr_brand_prefer", "needDiscrete": true, "needKey": false, "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f117", "feature_type": "lookup_feature", "key": "context:price_range", "map": "user:user_clk_price_prefer", "needDiscrete": true, "needKey": false, "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f118", "feature_type": "lookup_feature", "key": "context:price_range", "map": "user:user_book_price_prefer", "needDiscrete": true, "needKey": false, "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+
+        {"feature_name": "f119", "feature_type": "id_feature", "expression": "item:pv_ctr_1d", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f120", "feature_type": "id_feature", "expression": "item:pv_ctr_14d", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f121", "feature_type": "id_feature", "expression": "item:pv_cvr_1d", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f122", "feature_type": "id_feature", "expression": "item:pv_cvr_14d", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f123", "feature_type": "id_feature", "expression": "item:book_jys_score", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f124", "feature_type": "id_feature", "expression": "item:book_amt_score", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f127", "feature_type": "id_feature", "expression": "item:uv_ord_value_28d", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f131", "feature_type": "id_feature", "expression": "user:price_stddev", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f132", "feature_type": "id_feature", "expression": "user:avg_price", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f133", "feature_type": "id_feature", "expression": "user:avg_price_holiday", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f134", "feature_type": "id_feature", "expression": "user:avg_price_weekend", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f135", "feature_type": "id_feature", "expression": "user:avg_price_workday", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f139", "feature_type": "id_feature", "expression": "item:city_avg_price_30d", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f141", "feature_type": "id_feature", "expression": "item:city_book_htl_cnt_30d", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f143", "feature_type": "id_feature", "expression": "item:book_rscore_city_30d", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f144", "feature_type": "id_feature", "expression": "item:district_avg_price_30d", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f146", "feature_type": "id_feature", "expression": "item:district_book_htl_cnt_30d", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f148", "feature_type": "id_feature", "expression": "item:book_rscore_district_30d", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f150", "feature_type": "id_feature", "expression": "item:avg_price_pay", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f151", "feature_type": "id_feature", "expression": "item:avg_discount", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f152", "feature_type": "id_feature", "expression": "item:all_room_cnt", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f153", "feature_type": "id_feature", "expression": "item:avg_full_ratio", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f156", "feature_type": "id_feature", "expression": "item:price_city_ratio", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f157", "feature_type": "id_feature", "expression": "item:order_price_ratio_city", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f158", "feature_type": "id_feature", "expression": "item:order_price_ratio_district", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+
+        {"feature_name": "f181", "feature_type": "id_feature", "expression": "item:srid_uv_cvr_28d_top1", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f184", "feature_type": "id_feature", "expression": "item:rid_uv_cvr_28d_top1", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+
+        {"feature_name": "f192", "feature_type": "id_feature", "expression": "user:member_sellers", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f193", "feature_type": "id_feature", "expression": "item:member_seller_ids", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f194", "feature_type": "id_feature", "expression": "item:fav_uv_all", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f195", "feature_type": "id_feature", "expression": "item:fav_uv_1m", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f197", "feature_type": "lookup_feature", "key": "item:member_seller_ids", "map": "user:member_sellers_map", "needDiscrete": true, "needKey": false, "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+
+        {"feature_name": "f198", "feature_type": "id_feature", "expression": "user:poi_geohash5", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f199", "feature_type": "id_feature", "expression": "user:user_geohash5", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+
+        {"feature_name": "f206", "feature_type": "combo_feature", "expression" : ["user:age", "item:star"], "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f207", "feature_type": "combo_feature", "expression" : ["user:age", "item:brand"], "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+
+        {"feature_name": "f211", "feature_type": "combo_feature", "expression" : ["user:gender", "item:star"], "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f212", "feature_type": "combo_feature", "expression" : ["user:gender", "item:brand"], "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+
+        {"feature_name": "f216", "feature_type": "combo_feature", "expression" : ["user:has_child", "item:star"], "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f217", "feature_type": "combo_feature", "expression" : ["user:has_child", "item:brand"], "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+
+        {"feature_name": "f221", "feature_type": "combo_feature", "expression" : ["user:client_type", "context:price_range"], "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f222", "feature_type": "combo_feature", "expression" : ["user:purchase_power_level", "context:price_range"], "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f224", "feature_type": "combo_feature", "expression" : ["user:education_degree", "context:price_range"], "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f225", "feature_type": "combo_feature", "expression" : ["user:last_clk_price_range", "context:price_range"], "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f227", "feature_type": "combo_feature", "expression" : ["user:avg_price", "context:price_range"], "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f228", "feature_type": "combo_feature", "expression" : ["user:vac_avg_price", "context:price_range"], "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f229", "feature_type": "combo_feature", "expression" : ["user:flt_avg_price", "context:price_range"], "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+
+        {"feature_name": "f230", "feature_type": "combo_feature", "expression" : ["context:price_range", "user:search_hour"], "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f231", "feature_type": "combo_feature", "expression" : ["context:user_distance", "user:search_hour"], "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f232", "feature_type": "combo_feature", "expression" : ["context:poi_distance", "user:search_hour"], "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f233", "feature_type": "combo_feature", "expression" : ["item:brand_type", "user:search_hour"], "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+
+        {"feature_name": "f236", "feature_type": "combo_feature", "expression" : ["context:price_range", "user:before_days"], "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f237", "feature_type": "combo_feature", "expression" : ["context:user_distance", "user:before_days"], "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f238", "feature_type": "combo_feature", "expression" : ["context:poi_distance", "user:before_days"], "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f239", "feature_type": "combo_feature", "expression" : ["item:brand_type", "user:before_days"], "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+
+        {"feature_name": "f242", "feature_type": "combo_feature", "expression" : ["context:price_range", "user:buy_days"], "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f243", "feature_type": "combo_feature", "expression" : ["context:user_distance", "user:buy_days"], "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f244", "feature_type": "combo_feature", "expression" : ["context:poi_distance", "user:buy_days"], "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f245", "feature_type": "combo_feature", "expression" : ["item:brand_type", "user:buy_days"], "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+
+        {"feature_name": "f248", "feature_type": "combo_feature", "expression" : ["user:client_type", "item:brand_type"], "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f249", "feature_type": "combo_feature", "expression" : ["user:client_type", "item:star"], "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+
+        {"feature_name": "f251", "feature_type": "combo_feature", "expression" : ["user:purchase_power_level", "item:brand"], "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+
+        {"feature_name": "f252", "feature_type": "combo_feature", "expression" : ["context:user_distance", "user:checkin_day_type"], "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f253", "feature_type": "combo_feature", "expression" : ["context:poi_distance", "user:checkin_day_type"], "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f256", "feature_type": "combo_feature", "expression" : ["context:user_distance", "user:is_initsearch"], "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f257", "feature_type": "combo_feature", "expression" : ["context:poi_distance", "user:is_initsearch"], "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f258", "feature_type": "combo_feature", "expression" : ["context:user_distance", "user:is_nearby_search"], "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f259", "feature_type": "combo_feature", "expression" : ["context:poi_distance", "user:is_nearby_search"], "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f260", "feature_type": "combo_feature", "expression" : ["context:user_distance", "user:is_poi_search"], "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f261", "feature_type": "combo_feature", "expression" : ["context:poi_distance", "user:is_poi_search"], "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+
+        {"feature_name": "f262", "feature_type": "id_feature", "expression": "item:subway_station_distance", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f264", "feature_type": "id_feature", "expression": "item:airport_distance", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f265", "feature_type": "id_feature", "expression": "item:railway_station_distance", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f267", "feature_type": "id_feature", "expression": "item:hospital_distance", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f268", "feature_type": "id_feature", "expression": "item:college_distance", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+
+        {"feature_name": "f278", "feature_type": "id_feature", "expression": "item:last_checkout_time", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f281", "feature_type": "id_feature", "expression": "item:in_poi", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f286", "feature_type": "id_feature", "expression": "item:foreigner", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f287", "feature_type": "id_feature", "expression": "item:pet", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f291", "feature_type": "id_feature", "expression": "item:children_service", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+
+        {"feature_name": "f308", "feature_type": "lookup_feature", "key": "item:business", "map": "user:user_global_business_prefer_1d", "needDiscrete": true, "needKey": false, "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f310", "feature_type": "lookup_feature", "key": "item:business", "map": "user:user_global_business_prefer_7d", "needDiscrete": true, "needKey": false, "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f311", "feature_type": "lookup_feature", "key": "item:business", "map": "user:user_global_business_prefer_30d", "needDiscrete": true, "needKey": false, "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+
+        {"feature_name": "f312", "feature_type": "lookup_feature", "key": "item:poi_ids", "map": "user:user_global_poi_prefer_1d", "needDiscrete": true, "needKey": false, "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f314", "feature_type": "lookup_feature", "key": "item:poi_ids", "map": "user:user_global_poi_prefer_7d", "needDiscrete": true, "needKey": false, "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f315", "feature_type": "lookup_feature", "key": "item:poi_ids", "map": "user:user_global_poi_prefer_30d", "needDiscrete": true, "needKey": false, "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+
+        {"feature_name": "f316", "feature_type": "id_feature", "expression": "item:poi_ids", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+
+        {"feature_name": "f317", "feature_type": "id_feature", "expression": "context:match_type", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f318", "feature_type": "id_feature", "expression": "context:match_score_disc", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+
+        {"feature_name": "f319", "feature_type": "id_feature", "expression": "user:user_life_level_1", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f320", "feature_type": "id_feature", "expression": "user:user_life_level_2", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+
+        {"feature_name": "f321", "feature_type": "lookup_feature", "key": "item:city", "map": "user:j_triped_city", "needDiscrete": true, "needKey": false, "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f322", "feature_type": "lookup_feature", "key": "item:city", "map": "user:j_triping_city", "needDiscrete": true, "needKey": false, "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f323", "feature_type": "lookup_feature", "key": "item:city", "map": "user:j_go_city", "needDiscrete": true, "needKey": false, "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+
+        {"feature_name": "f324", "feature_type": "lookup_feature", "key": "item:shid", "map": "user:j_go_travela_hotel", "needDiscrete": true, "needKey": false, "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f326", "feature_type": "lookup_feature", "key": "item:shid", "map": "user:j_triping_travela_hotel", "needDiscrete": true, "needKey": false, "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f328", "feature_type": "lookup_feature", "key": "item:shid", "map": "user:j_tripingp_hotel", "needDiscrete": true, "needKey": false, "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f329", "feature_type": "lookup_feature", "key": "item:shid", "map": "user:j_gop_hotel", "needDiscrete": true, "needKey": false, "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+
+        {"feature_name": "f330", "feature_type": "lookup_feature", "key": "item:poi_ids", "map": "user:user_real_bhv_poi_5m", "needDiscrete": true, "needKey": false, "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f332", "feature_type": "lookup_feature", "key": "item:poi_ids", "map": "user:user_real_bhv_poi_30m", "needDiscrete": true, "needKey": false, "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f334", "feature_type": "lookup_feature", "key": "item:poi_ids", "map": "user:user_real_bhv_poi_6h", "needDiscrete": true, "needKey": false, "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f335", "feature_type": "lookup_feature", "key": "item:poi_ids", "map": "user:user_real_bhv_poi_12h", "needDiscrete": true, "needKey": false, "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+
+        {"feature_name": "f344", "feature_type": "id_feature", "expression": "item:city_brand_pclr_1d_rb", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f345", "feature_type": "id_feature", "expression": "item:city_geohash5_pclr_1d_rb", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f348", "feature_type": "id_feature", "expression": "item:city_business_pclr_1d_rb", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f350", "feature_type": "id_feature", "expression": "item:city_price_pclr_1d_rb", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+
+        {"feature_name": "f351", "feature_type": "id_feature", "expression": "item:city_brand_pclr_7d_rb", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f352", "feature_type": "id_feature", "expression": "item:city_geohash5_pclr_7d_rb", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f355", "feature_type": "id_feature", "expression": "item:city_business_pclr_7d_rb", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f357", "feature_type": "id_feature", "expression": "item:city_price_pclr_7d_rb", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+
+        {"feature_name": "f365", "feature_type": "id_feature", "expression": "item:city_brand_bookjy_1d_rb", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f366", "feature_type": "id_feature", "expression": "item:city_geohash5_bookjy_1d_rb", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f369", "feature_type": "id_feature", "expression": "item:city_business_bookjy_1d_rb", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f371", "feature_type": "id_feature", "expression": "item:city_price_bookjy_1d_rb", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+
+        {"feature_name": "f372", "feature_type": "id_feature", "expression": "item:city_brand_bookjy_7d_rb", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f373", "feature_type": "id_feature", "expression": "item:city_geohash5_bookjy_7d_rb", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f376", "feature_type": "id_feature", "expression": "item:city_business_bookjy_7d_rb", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f378", "feature_type": "id_feature", "expression": "item:city_price_bookjy_7d_rb", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+
+        {"feature_name": "f379", "feature_type": "id_feature", "expression": "item:life_cycle", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f380", "feature_type": "id_feature", "expression": "item:seller_type", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+
+        {"feature_name": "f418", "feature_type": "id_feature", "expression": "user:click_top1_user_distance", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f421", "feature_type": "id_feature", "expression": "user:pay_top1_user_distance", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f424", "feature_type": "id_feature", "expression": "user:click_top1_poi_distance", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f427", "feature_type": "id_feature", "expression": "user:pay_top1_poi_distance", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+
+        {"feature_name": "f467", "feature_type": "id_feature", "expression": "item:aesthetic_score", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f468", "feature_type": "id_feature", "expression": "item:category8", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f469", "feature_type": "id_feature", "expression": "item:category19", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+        {"feature_name": "f470", "feature_type": "id_feature", "expression": "item:badimage_flag", "hash_bucket_size": 100000000, "embed_size": 4, "shared": true, "shared_matrix_name": "low_dim_mat", "value_type": "string"},
+
+      {
+        "sequence_name": "lclick_hotel",
+        "sequence_column": "user_lclick_hotel",
+        "sequence_length": 50,
+        "sequence_delim": ";",
+        "attribute_delim": "#",
+        "sequence_table": "item",
+        "sequence_pk": "user:user_bhvs_seq",
+        "features": [
+          {
+            "feature_name": "lclick_shid_seq",
+            "feature_type": "id_feature",
+            "expression": "user:lclick_shid_seq",
+            "hash_bucket_size": 5000000,
+            "embed_size": 8,
+            "shared": true,
+            "shared_matrix_name": "lclick_shid_mat",
+            "value_type": "string",
+            "need_prefix": false
+          },
+          {
+            "feature_name": "lclick_price_seq",
+            "feature_type": "id_feature",
+            "expression": "user:lclick_price_seq",
+            "hash_bucket_size": 100,
+            "embed_size": 8,
+            "shared": true,
+            "shared_matrix_name": "lclick_price_mat",
+            "value_type": "string",
+            "need_prefix": false
+          },
+          {
+            "feature_name": "lclick_bhv_gap_day_seq",
+            "feature_type": "id_feature",
+            "expression": "user:lclick_bhv_gap_day_seq",
+            "hash_bucket_size": 1000,
+            "embed_size": 8,
+            "shared": true,
+            "shared_matrix_name": "lclick_bhv_gap_day_mat",
+            "value_type": "string",
+            "need_prefix": false
+          },
+          {
+            "feature_name": "lclick_bhv_gap_hour_seq",
+            "feature_type": "id_feature",
+            "expression": "user:lclick_bhv_gap_hour_seq",
+            "hash_bucket_size": 1000,
+            "embed_size": 8,
+            "shared": true,
+            "shared_matrix_name": "lclick_bhv_gap_hour_mat",
+            "value_type": "string",
+            "need_prefix": false
+          },
+          {
+            "feature_name": "lclick_hotel_mask",
+            "feature_type": "raw_feature",
+            "expression": "user:lclick_hotel_mask",
+            "value_type": "double"
+          }
+        ]
+      },
+
+      {
+        "sequence_name": "lpay_hotel",
+        "sequence_column": "user_lpay_hotel",
+        "sequence_length": 50,
+        "sequence_delim": ";",
+        "attribute_delim": "#",
+        "sequence_table": "item",
+        "sequence_pk": "user:user_bhvs_seq",
+        "features": [
+          {
+            "feature_name": "lpay_shid_seq",
+            "feature_type": "id_feature",
+            "expression": "user:lpay_shid_seq",
+            "hash_bucket_size": 5000000,
+            "embed_size": 8,
+            "shared": true,
+            "shared_matrix_name": "lpay_shid_mat",
+            "value_type": "string",
+            "need_prefix": false
+          },
+          {
+            "feature_name": "lpay_price_seq",
+            "feature_type": "id_feature",
+            "expression": "user:lpay_price_seq",
+            "hash_bucket_size": 100,
+            "embed_size": 8,
+            "shared": true,
+            "shared_matrix_name": "lpay_price_mat",
+            "value_type": "string",
+            "need_prefix": false
+          },
+          {
+            "feature_name": "lpay_bhv_gap_day_seq",
+            "feature_type": "id_feature",
+            "expression": "user:lpay_bhv_gap_day_seq",
+            "hash_bucket_size": 1000,
+            "embed_size": 8,
+            "shared": true,
+            "shared_matrix_name": "lpay_bhv_gap_day_mat",
+            "value_type": "string",
+            "need_prefix": false
+          },
+          {
+            "feature_name": "lpay_bhv_gap_hour_seq",
+            "feature_type": "id_feature",
+            "expression": "user:lpay_bhv_gap_hour_seq",
+            "hash_bucket_size": 1000,
+            "embed_size": 8,
+            "shared": true,
+            "shared_matrix_name": "lpay_bhv_gap_hour_mat",
+            "value_type": "string",
+            "need_prefix": false
+          },
+          {
+            "feature_name": "lpay_hotel_mask",
+            "feature_type": "raw_feature",
+            "expression": "user:lpay_hotel_mask",
+            "value_type": "double"
+          }
+        ]
+      },
+
+       {
+        "sequence_name": "unclick_hotel",
+        "sequence_column": "user_unclick_hotel",
+        "sequence_length": 20,
+        "sequence_delim": ";",
+        "attribute_delim": "#",
+        "sequence_table": "item",
+        "sequence_pk": "user:user_bhvs_seq",
+        "features": [
+          {
+            "feature_name": "unclick_shid_seq",
+            "feature_type": "id_feature",
+            "expression": "user:unclick_shid_seq",
+            "hash_bucket_size": 5000000,
+            "embed_size": 8,
+            "shared": true,
+            "shared_matrix_name": "unclick_shid_mat",
+            "value_type": "string",
+            "need_prefix": false
+          },
+          {
+            "feature_name": "unclick_price_seq",
+            "feature_type": "id_feature",
+            "expression": "user:unclick_price_seq",
+            "hash_bucket_size": 100,
+            "embed_size": 8,
+            "shared": true,
+            "shared_matrix_name": "unclick_price_mat",
+            "value_type": "string",
+            "need_prefix": false
+          },
+          {
+            "feature_name": "unclick_cnt_seq",
+            "feature_type": "id_feature",
+            "expression": "user:unclick_cnt_seq",
+            "hash_bucket_size": 5000,
+            "embed_size": 8,
+            "shared": true,
+            "shared_matrix_name": "unclick_cnt_mat",
+            "value_type": "string",
+            "need_prefix": false
+          },
+          {
+            "feature_name": "unclick_hotel_mask",
+            "feature_type": "raw_feature",
+            "expression": "user:unclick_hotel_mask",
+            "value_type": "double"
+          }
+        ]
+      },
+
+    {
+        "sequence_name": "lclick_user_dis",
+        "sequence_column": "lclick_user_dis",
+        "sequence_length": 50,
+        "sequence_delim": ";",
+        "attribute_delim": "#",
+        "sequence_table": "item",
+        "sequence_pk": "user:user_bhvs_seq",
+        "features": [
+          {
+            "feature_name": "lclick_user_dis_seq",
+            "feature_type": "id_feature",
+            "expression": "user:lclick_user_dis_seq",
+            "hash_bucket_size": 1000,
+            "embed_size": 8,
+            "shared": true,
+            "shared_matrix_name": "lclick_user_dis_mat",
+            "value_type": "string",
+            "need_prefix": false
+          }
+        ]
+    },
+
+    {
+        "sequence_name": "lpay_user_dis",
+        "sequence_column": "lpay_user_dis",
+        "sequence_length": 50,
+        "sequence_delim": ";",
+        "attribute_delim": "#",
+        "sequence_table": "item",
+        "sequence_pk": "user:user_bhvs_seq",
+        "features": [
+          {
+            "feature_name": "lpay_user_dis_seq",
+            "feature_type": "id_feature",
+            "expression": "user:lpay_user_dis_seq",
+            "hash_bucket_size": 1000,
+            "embed_size": 8,
+            "shared": true,
+            "shared_matrix_name": "lpay_user_dis_mat",
+            "value_type": "string",
+            "need_prefix": false
+          }
+        ]
+    },
+
+    {
+        "sequence_name": "lclick_poi_dis",
+        "sequence_column": "lclick_poi_dis",
+        "sequence_length": 50,
+        "sequence_delim": ";",
+        "attribute_delim": "#",
+        "sequence_table": "item",
+        "sequence_pk": "user:user_bhvs_seq",
+        "features": [
+          {
+            "feature_name": "lclick_poi_dis_seq",
+            "feature_type": "id_feature",
+            "expression": "user:lclick_poi_dis_seq",
+            "hash_bucket_size": 1000,
+            "embed_size": 8,
+            "shared": true,
+            "shared_matrix_name": "lclick_poi_dis_mat",
+            "value_type": "string",
+            "need_prefix": false
+          }
+        ]
+    },
+
+    {
+        "sequence_name": "lpay_poi_dis",
+        "sequence_column": "lpay_poi_dis",
+        "sequence_length": 50,
+        "sequence_delim": ";",
+        "attribute_delim": "#",
+        "sequence_table": "item",
+        "sequence_pk": "user:user_bhvs_seq",
+        "features": [
+          {
+            "feature_name": "lpay_poi_dis_seq",
+            "feature_type": "id_feature",
+            "expression": "user:lpay_poi_dis_seq",
+            "hash_bucket_size": 1000,
+            "embed_size": 8,
+            "shared": true,
+            "shared_matrix_name": "lpay_poi_dis_mat",
+            "value_type": "string",
+            "need_prefix": false
+          }
+        ]
+    },
+
+        {"feature_name":"user_distance_valid","feature_type": "raw_feature","expression": "user:user_distance_valid", "value_type": "double"},
+        {"feature_name":"poi_distance_valid","feature_type": "raw_feature","expression": "user:poi_distance_valid", "value_type": "double"},
+
+        {"feature_name":"ctr_ratio","feature_type": "raw_feature","expression": "user:ctr_ratio", "value_type": "double"},
+        {"feature_name":"cvr_ratio","feature_type": "raw_feature","expression": "user:cvr_ratio", "value_type": "double"}
+  ]
+}
